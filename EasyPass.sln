@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPass", "EasyPass\EasyPass.csproj", "{460FC5E6-E9FC-4007-88B1-7975694DF9B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460FC5E6-E9FC-4007-88B1-7975694DF9B7}.Debug|x86.ActiveCfg = Debug|x86
+		{460FC5E6-E9FC-4007-88B1-7975694DF9B7}.Debug|x86.Build.0 = Debug|x86
+		{460FC5E6-E9FC-4007-88B1-7975694DF9B7}.Release|x86.ActiveCfg = Release|x86
+		{460FC5E6-E9FC-4007-88B1-7975694DF9B7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
