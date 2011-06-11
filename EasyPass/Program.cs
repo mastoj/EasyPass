@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using EasyPass.Commands;
+using EasyPass.Encryption;
+using EasyPass.Storage;
 
 namespace EasyPass
 {

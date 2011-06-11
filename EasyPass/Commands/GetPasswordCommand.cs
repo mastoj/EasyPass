@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace EasyPass
+namespace EasyPass.Commands
 {
     internal class GetPasswordCommand : PasswordCommand
     {

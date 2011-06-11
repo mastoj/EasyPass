@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace EasyPass
+namespace EasyPass.Encryption
 {
     public class DPAPIEncryptor : IEncryptor
     {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using EasyPass.Storage;
 
-namespace EasyPass
+namespace EasyPass.Commands
 {
     public abstract class PasswordCommand : ICommand
     {

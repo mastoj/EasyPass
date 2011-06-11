@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using EasyPass.Commands;
 
 namespace EasyPass
 {
@@ -11,14 +12,17 @@ namespace EasyPass
             for (int i = 0; i < args.Length; i++)
             {
                 var command = GetCommand(args[i]);
-                var commandArgs = new List<string>();
-                for (int j = i + 1; j < args.Length && !args[j].StartsWith("-"); j++)
+                if (command != null)
                 {
-                    commandArgs.Add(args[j]);
-                    i = j;
+                    var commandArgs = new List<string>();
+                    for (int j = i + 1; j < args.Length && !args[j].StartsWith("-"); j++)
+                    {
+                        commandArgs.Add(args[j]);
+                        i = j;
+                    }
+                    command.CommandArgs = commandArgs;
+                    yield return command;
                 }
-                command.CommandArgs = commandArgs;
-                yield return command;
             }
             yield break;
         }
@@ -35,8 +39,11 @@ namespace EasyPass
                     return new DeletePasswordCommand();
                 case "-l":
                     return new ListPasswordsCommand();
-                default:
+                case "":
+                case "-g":
                     return new GetPasswordCommand();
+                default:
+                    return null;
             }
         }
     }

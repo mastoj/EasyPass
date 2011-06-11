@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.IO.IsolatedStorage;
-using System.Linq;
-using System.Text;
-using System.Xml;
-using System.Xml.Linq;
-using System.Xml.Serialization;
 
-namespace EasyPass
+namespace EasyPass.Commands
 {
     internal class AddPasswordCommand : PasswordCommand
     {

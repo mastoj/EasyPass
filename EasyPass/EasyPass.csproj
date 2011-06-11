@@ -46,19 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPasswordCommand.cs" />
+    <Compile Include="Commands\AddPasswordCommand.cs" />
     <Compile Include="ArgumentParser.cs" />
-    <Compile Include="DeletePasswordCommand.cs" />
-    <Compile Include="DPAPIEncryptor.cs" />
-    <Compile Include="GetPasswordCommand.cs" />
-    <Compile Include="ICommand.cs" />
-    <Compile Include="IEncryptor.cs" />
-    <Compile Include="InteractiveCommand.cs" />
+    <Compile Include="Commands\DeletePasswordCommand.cs" />
+    <Compile Include="Encryption\DPAPIEncryptor.cs" />
+    <Compile Include="Commands\GetPasswordCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Encryption\IEncryptor.cs" />
+    <Compile Include="Commands\InteractiveCommand.cs" />
     <Compile Include="IoCContainer.cs" />
-    <Compile Include="IPasswordSettingRespository.cs" />
-    <Compile Include="IsolatedStoragePasswordSettingRepository.cs" />
-    <Compile Include="ListPasswordsCommand.cs" />
-    <Compile Include="PasswordCommand.cs" />
+    <Compile Include="Storage\IPasswordSettingRespository.cs" />
+    <Compile Include="Storage\IsolatedStoragePasswordSettingRepository.cs" />
+    <Compile Include="Commands\ListPasswordsCommand.cs" />
+    <Compile Include="Commands\PasswordCommand.cs" />
     <Compile Include="PasswordSetting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

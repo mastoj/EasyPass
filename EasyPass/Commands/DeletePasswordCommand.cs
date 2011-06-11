@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EasyPass
+namespace EasyPass.Commands
 {
     internal class DeletePasswordCommand : PasswordCommand
     {

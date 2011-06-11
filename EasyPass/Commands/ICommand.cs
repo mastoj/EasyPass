@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EasyPass
+namespace EasyPass.Commands
 {
     interface ICommand
     {

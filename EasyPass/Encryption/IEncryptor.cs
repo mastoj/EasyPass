@@ -1,4 +1,4 @@
-﻿namespace EasyPass
+﻿namespace EasyPass.Encryption
 {
     internal interface IEncryptor
     {
